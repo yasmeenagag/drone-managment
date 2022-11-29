@@ -14,4 +14,6 @@ public interface DroneRepository extends JpaRepository<Drone, String> {
 
     List<Drone> findAllByStateEqualsIgnoreCaseAndBatteryCapacityGreaterThan(String DroneStateEnum, long batteryCapacity);
 
+    List<Drone> findAllByBatteryCapacityLessThan(long batteryCapacity);
+
 }

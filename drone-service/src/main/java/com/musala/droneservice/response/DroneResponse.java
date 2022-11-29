@@ -1,5 +1,6 @@
 package com.musala.droneservice.response;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.musala.droneservice.entity.Drone;
 import lombok.Data;
 
@@ -12,6 +13,8 @@ public class DroneResponse {
     private Long weightLimit;
     private Long batteryCapacity;
     private String state ;
+    @JsonIgnore
+    private String error;
 
     public DroneResponse(Drone drone) {
         this.serialNumber=drone.getSerialNumber();
@@ -20,5 +23,8 @@ public class DroneResponse {
         this.batteryCapacity=drone.getBatteryCapacity();
         this.state=drone.getState();
 
+    }
+    public DroneResponse(String error) {
+        this.error=error;
     }
 }
