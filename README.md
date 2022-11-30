@@ -69,8 +69,6 @@ After successful build for each project should run each jar " located in trget f
 
 Ex java -jar Eureka-server-0.0.1-SNAPSHOT <br/>
 
-### testing <br/>
-
 
 
 
