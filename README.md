@@ -26,7 +26,8 @@ Database:-
    * h2 database (contains preloaded data presented into /resources/data.sql 
    
 4-Medication microservices <br/><br/>
-  includes api for  <br/>
+
+ Apis:- <br/>
       loading a drone with medication items<br/>
       retrun medictions loaded by drone (called through fiegn client in drone service)<br/>
     
