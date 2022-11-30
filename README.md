@@ -6,7 +6,7 @@ This is a mini project the bussiness is to use Drones to deliver light weight me
 
 ### What's inside 
 
-4 mini spring boot projects
+four mini spring boot projects
 
 1- Erureka server (service discovery and registry allows services to find and communicate with each other without hard-coding the hostname and port 
 
@@ -74,4 +74,12 @@ Ex java -jar Eureka-server-0.0.1-SNAPSHOT
 
 
 ## notes 
+to check the full trace for each request cycle please view http://localhost:9411/zipkin/ 
+![image](https://user-images.githubusercontent.com/17744054/204864488-67284fae-5ba7-45c0-8f14-6d249f2bd962.png)
+
+to check services registed in eureka please visit http://localhost:8761/
+![image](https://user-images.githubusercontent.com/17744054/204864593-7de7354a-decc-4246-acf6-23f39c13298d.png)
+
+
+
 about Zipkin :is an open source project that provides mechanisms for sending, receiving, storing, and visualizing traces. This allows us to correlate activity between servers and get a much clearer picture of exactly what is happening in our services. 
